@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/setup-Repo2@v2
         with:
           repo: Repo2
           workflow_file_name: master.yml
