@@ -1,0 +1,12 @@
+name: Deploy
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          repo: Repo2
+          workflow_file_name: master.yml
+          
